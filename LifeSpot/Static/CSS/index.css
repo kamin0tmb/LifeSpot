@@ -1,0 +1,162 @@
+﻿.video-container {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+/* Стили панели навигации */
+.navbar p{
+    color: darkgray;
+    padding-left: 15%;
+}
+
+/* Стили панели навигации при наведении мышью */
+.navbar p:hover {
+    color: aliceblue;
+}
+
+footer {
+    /*position: absolute*/
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 66%;
+    padding-left: 1%;
+    margin-top: auto;
+}
+
+aside {
+    height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 10%;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    font-size: large;
+}
+
+body {
+    /*padding-left: 11%;*/
+    /*margin: 20px;*/
+    /*margin-bottom: 200px;*/
+    padding-left: 250px;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Стиль хедера для главной страницы имеет приоритет,
+так как используется селектор по идентификатору*/
+#header-index {
+    color: #000000;
+    text-shadow: 0.1em 0.1em 0.15em darkgray;
+}
+
+/* Глобальные стили для хедеров на всём сайте */
+header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+
+head, footer, body, .video-container {
+    background-color: lightgreen;
+}
+
+header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid darkgrey;
+    border-radius: 2px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid dimgrey;
+}
+
+.review-container, .review-button {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+/*Слайдер*/
+.slider {
+    height: 408px;
+    width: 1000px;
+    position: relative;
+}
+
+.slider .images {
+    height: 100%;
+    width: 100%;
+}
+
+.slider .images img {
+    height: 100%;
+    width: 100%;
+}
+
+.btm-slides {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.btm-slides span {
+    height: 5px;
+    width: 50px;
+    border: 1px solid white;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: 1px solid white;
+    background: rgba(255,255,255,0.2);
+    display: table-cell; /*выравнивает текст внутри span по центру*/
+    text-align: center; /*выравнивает текст внутри span по центру*/
+}
+
+.arrow:hover {
+    background: rgba(255,255,255,0.7);
+}
+
+.right {
+    right: 0;
+}
+
+.arrow span {
+    line-height: 43px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+}
